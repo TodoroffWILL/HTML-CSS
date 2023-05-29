@@ -1,0 +1,54 @@
+a {
+  color: cadetblue;
+}
+
+a:hover {
+  color: brown;
+}
+
+.decription {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.price {
+  color: green;
+  font-weight: 700;
+}
+.add-to-cart-button {
+  background-color: rgb(255, 216, 20);
+  color: black;
+  height: 32px;
+  width: 120px;
+  font-weight: 500;
+  font-size: medium;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+}
+.add-to-cart-button:hover {
+  filter: brightness(95%);
+}
+.add-to-cart-button:active {
+  opacity: 0.5;
+}
+.buy-now-button {
+  background-color: rgb(255, 149, 20);
+  color: black;
+  height: 32px;
+  width: 120px;
+  font-weight: 500;
+  font-size: medium;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+}
+.buy-now-button:hover {
+  /* filtering the brigness of the color -
+   note: 100% is baseline so 85% is slightly darker, 
+   20% would be significantly darker */
+  filter: brightness(95%);
+}
+.buy-now-button:active {
+  opacity: 0.5;
+}

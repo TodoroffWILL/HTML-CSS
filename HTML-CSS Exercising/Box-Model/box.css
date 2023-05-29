@@ -1,0 +1,82 @@
+.pagination button {
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 7px;
+  padding-right: 7px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.pagination {
+  margin: 10px;
+}
+
+.stretch button {
+  border: none;
+  background-color: green;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  cursor: pointer;
+  transition: padding 1s;
+}
+.stretch button:hover {
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.stretch {
+  margin: 10px;
+}
+
+.click-3d button {
+  border: none;
+  background-color: green;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  cursor: pointer;
+  transition: margin 0.4s;
+  /* box-shadow accepts 4 params: 1.vertical-to right,2.horizontal-down,3.blur 4.color*/
+  box-shadow: 1.5px 1.5px 5px rgba(0, 0, 0, 0.5);
+}
+.click-3d button:active {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.click-3d {
+  margin: 10px;
+}
+
+.margin-padding button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  cursor: pointer;
+
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  /* Padding left + Margin left = 25px */
+  transition: padding 0.15s, margin 0.15s;
+}
+/* Be careful because when you :hover left,right padding = 25px. So default left,right padding and margin must be = 25px */
+.margin-padding button:hover {
+  /* Here when you remove the margin. The padding it must be the same 25px */
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.margin-padding {
+  margin-top: 10px;
+}
