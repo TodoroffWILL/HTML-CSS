@@ -1,0 +1,30 @@
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.fcd {
+  font-weight: bold;
+  font-size: 18px;
+}
+.fcd2 {
+  color: #606060;
+  margin-left: 3px;
+  font-size: 16px;
+}
+
+.description {
+  margin-top: 10px;
+  width: 550px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+.chp {
+  color: blue;
+  cursor: pointer;
+}
+
+.chp:hover {
+  text-decoration: underline;
+}

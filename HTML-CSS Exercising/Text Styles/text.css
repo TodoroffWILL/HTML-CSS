@@ -1,5 +1,8 @@
 p {
   font-family: Arial, Helvetica, sans-serif;
+  margin-top: 0;
+  margin-bottom: 0;
+  /* We set by default all paragraphs to have this options. But the specificy is on the bottom */
 }
 
 .video-title {
@@ -13,13 +16,11 @@ p {
 .views {
   font-size: 12px;
   color: #606060;
-  margin-top: 0;
   margin-bottom: 20px;
 }
 .author {
   color: #606060;
   font-size: 14px;
-  margin-top: 0;
   margin-bottom: 20px;
 }
 
@@ -27,7 +28,19 @@ p {
   color: #606060;
   font-size: 14px;
   width: 280px;
-  margin-top: 0;
-  margin-bottom: 0;
   line-height: 20px;
+  margin-bottom: 100px;
+}
+.apple-text {
+  margin-bottom: 50px;
+  font-size: 14px;
+  background-color: #e34140;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.shop-btn:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
