@@ -1,0 +1,15 @@
+.thumbnail {
+  width: 300px;
+  /* height: 300px;
+  /* Makes the image to shrink to fit in the dimensions */
+  /* object-fit: contain; */
+  /*  Which part of the image to be seen and possitioning */
+  /* object-position: bottom;
+  border: 2px solid red; */
+}
+
+.search-bar{
+  width: 300px;
+  font-size: 20px;
+  margin-left: 12px;
+}
