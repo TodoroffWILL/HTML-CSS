@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 p {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Roboto;
   margin-top: 0;
   margin-bottom: 0;
   /* We set by default all paragraphs to have this options. But the specificy is on the bottom */
