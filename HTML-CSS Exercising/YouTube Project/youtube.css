@@ -1,6 +1,6 @@
 .thumbnail {
   width: 300px;
-  display: block;
+
   /* height: 300px;
   /* Makes the image to shrink to fit in the dimensions */
   /* object-fit: contain; */
@@ -10,10 +10,17 @@
 }
 
 .search-bar {
+  display: block;
   width: 300px;
   font-size: 20px;
   margin-left: 12px;
 }
 .video-title {
   width: 300px;
+}
+.video-preview {
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 15px;
 }
