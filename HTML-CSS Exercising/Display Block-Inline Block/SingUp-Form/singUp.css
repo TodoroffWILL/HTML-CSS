@@ -1,0 +1,34 @@
+.first,
+.last {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 7px;
+  width: 130px;
+  border: 1px solid #606060;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.email {
+  display: block;
+  font-size: 16px;
+  width: 285px;
+  padding: 10px;
+  border: 1px solid #606060;
+  border-radius: 7px;
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.singUp {
+  width: 307px;
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+  background-color: rgba(21, 109, 252, 0.655);
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}

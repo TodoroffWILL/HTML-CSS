@@ -1,5 +1,6 @@
 .thumbnail {
   width: 300px;
+  display: block;
   /* height: 300px;
   /* Makes the image to shrink to fit in the dimensions */
   /* object-fit: contain; */
@@ -8,8 +9,11 @@
   border: 2px solid red; */
 }
 
-.search-bar{
+.search-bar {
   width: 300px;
   font-size: 20px;
   margin-left: 12px;
+}
+.video-title {
+  width: 300px;
 }
