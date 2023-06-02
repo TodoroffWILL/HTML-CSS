@@ -1,0 +1,55 @@
+.cat-profile {
+  width: 200px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+  vertical-align: top;
+  margin-right: 15px;
+  display: inline-block;
+}
+
+.picture {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.name {
+  font-size: 23px;
+  font-weight: bold;
+  margin-left: 8px;
+}
+.mutual {
+  margin-left: 8px;
+  margin-bottom: 10px;
+}
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 25px;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+.mutual-friends {
+  display: inline-block;
+  vertical-align: middle;
+  color: grey;
+}
+.add-btn {
+  margin-left: 8px;
+  font-size: 18px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
+  border: none;
+  background-color: rgb(7, 142, 253);
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 7px;
+}
