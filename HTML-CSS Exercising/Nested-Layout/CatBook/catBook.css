@@ -1,28 +1,32 @@
-.cat-profile {
-  width: 200px;
-  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
-  vertical-align: top;
-  margin-right: 15px;
-  display: inline-block;
-}
-
-.picture {
-  width: 200px;
-  height: 250px;
-  object-fit: cover;
-}
-
 p {
   margin-top: 0;
   margin-bottom: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+.cat-profile {
+  width: 200px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+  vertical-align: top;
+  margin-right: 15px;
+}
+
+.picture {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
 .name {
   font-size: 23px;
   font-weight: bold;
   margin-left: 8px;
 }
+/* This is the container which is profile pic and mutual friends */
 .mutual {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  align-items: center;
   margin-left: 8px;
   margin-bottom: 10px;
 }
@@ -52,4 +56,10 @@ p {
   cursor: pointer;
   border-radius: 5px;
   margin-bottom: 7px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  row-gap: 20px;
+  column-gap: 20px;
 }
