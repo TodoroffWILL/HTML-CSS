@@ -1,0 +1,22 @@
+.header {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  /* Spreading the flex boxes evenlenly across */
+  justify-content: space-between;
+}
+.left-section {
+  width: 300px;
+  background-color: blueviolet;
+}
+.middle-section {
+  margin-left: 70px;
+  margin-right: 55px;
+  flex: 1;
+  background-color: aqua;
+  max-width: 1000px;
+}
+.right-section {
+  width: 450px;
+  background-color: blueviolet;
+}

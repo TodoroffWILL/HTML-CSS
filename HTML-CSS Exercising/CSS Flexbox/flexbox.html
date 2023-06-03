@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="flexbox.css" />
+    <title>Flexbox Practice</title>
+  </head>
+  <body style="padding-bottom: 1000px">
+    <div style="display: flex; flex-direction: row">
+      <div style="background-color: lightblue">div1 asd</div>
+      <div style="background-color: gray">
+        div2
+        <p>text</p>
+      </div>
+    </div>
+    <div style="margin-top: 30px; display: flex; flex-direction: row">
+      <div style="background-color: lightblue; width: 100px">100px</div>
+      <div style="background-color: gray; flex: 1">
+        Flex 1
+        <p>text</p>
+      </div>
+    </div>
+    <div
+      style="
+        margin-top: 30px;
+        height: 70px;
+        border: 1px solid gray;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      "
+    >
+      <div style="background-color: lightblue; width: 100px">Flex 1 = 1fr</div>
+      <div style="background-color: gray; width: 100px">100px</div>
+      <div style="background-color: lightblue; width: 100px; width: 100px">
+        Flex 2 = 2fr
+      </div>
+    </div>
+
+    <div
+      style="
+        margin-top: 30px;
+        height: 70px;
+        border: 1px solid gray;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      "
+    >
+      <div style="background-color: lightblue; width: 100px">Flex 1 = 1fr</div>
+      <div style="background-color: gray; width: 100px">100px</div>
+      <div style="background-color: lightblue; width: 100px; width: 100px">
+        Flex 2 = 2fr
+      </div>
+    </div>
+    <div
+      style="
+        margin-top: 30px;
+        height: 70px;
+        border: 1px solid gray;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      "
+    >
+      <div style="background-color: lightblue; width: 100px">Flex 1 = 1fr</div>
+      <div style="background-color: gray; width: 100px">100px</div>
+      <div style="background-color: lightblue; width: 100px; width: 100px">
+        Flex 2 = 2fr
+      </div>
+    </div>
+
+    <div style="display: flex; margin-top: 30px">
+      <div style="background-color: blanchedalmond; width: 200px">flex 1</div>
+      <div style="background-color: brown; width: 75px">flex 2</div>
+    </div>
+
+    <div style="display: flex; margin-top: 50px">
+      <div style="background-color: aqua; width: 50px">1</div>
+      <div style="background-color: blanchedalmond; flex: 1">2</div>
+      <div style="background-color: aqua; width: 75px">3</div>
+    </div>
+
+    <div
+      style="display: flex; margin-top: 50px; justify-content: space-between"
+    >
+      <div style="background-color: aquamarine">item1</div>
+      <div style="background-color: blueviolet">item2</div>
+      <div style="background-color: aquamarine">item3</div>
+      <div style="background-color: blueviolet">item4</div>
+    </div>
+
+    <div
+      style="
+        display: flex;
+        border: 1px solid gray;
+        margin-top: 50px;
+        justify-content: space-between;
+        flex-direction: row;
+        height: 50px;
+        align-items: center;
+      "
+    >
+      <div style="background-color: brown">item1</div>
+      <div style="background-color: antiquewhite">item2</div>
+    </div>
+  </body>
+</html>
