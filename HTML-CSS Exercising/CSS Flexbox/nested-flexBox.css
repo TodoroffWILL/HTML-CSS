@@ -1,0 +1,30 @@
+.flex-container {
+  display: flex;
+  height: 50px;
+  margin-bottom: 50px;
+}
+.column1 {
+  background-color: lightpink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+}
+.item1 {
+  background-color: black;
+  color: white;
+}
+
+.column2 {
+  background-color: lightblue;
+  width: 200px;
+}
+.container2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row2 {
+  color: white;
+  background-color: black;
+}
