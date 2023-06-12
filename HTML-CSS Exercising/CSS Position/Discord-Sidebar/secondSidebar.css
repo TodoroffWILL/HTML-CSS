@@ -1,0 +1,31 @@
+.second-bar {
+  background-color: rgb(100, 100, 100);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 70px;
+  width: 150px;
+  padding: 20px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.info {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: white;
+}
+.add {
+  color: rgb(167, 167, 167);
+  font-size: 25px;
+}
+
+.options-names {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(167, 167, 167);
+  margin-bottom: 10px;
+}
