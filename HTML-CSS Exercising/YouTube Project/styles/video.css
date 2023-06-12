@@ -1,4 +1,3 @@
-
 .search-bar {
   display: block;
   width: 300px;
@@ -39,6 +38,7 @@
 }
 .thumbnail-row {
   margin-bottom: 12px;
+  position: relative;
 }
 .video-author,
 .video-stats {
@@ -54,3 +54,20 @@
   column-gap: 25px;
   row-gap: 50px;
 }
+
+.time {
+  background-color: black;
+  color: white;
+
+  position: absolute;
+  bottom: 8px;
+  right: 5px;
+
+  font-size: 10px;
+  font-weight: bold;
+  padding: 4px;
+  border-radius: 3px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+/* To put something like the time on the videos we need the div to be position:absolute and the time div to be position relative */

@@ -8,6 +8,7 @@
   </head>
   <body style="height: 3000px; padding-top: 60px; padding-left: 80px">
     <!-- When we put left and right the element is streching  -->
+    <!-- position-fixed = placed in the browser window -->
     <div
       style="
         background-color: black;
@@ -17,8 +18,10 @@
         left: 0px;
         right: 0px;
         height: 50px;
+        z-index: 1;
       "
     >
+      <!-- z-index means which elements apear infront and which behind. Higher z-index will appear infront of lower z-index default is 0-->
       header
     </div>
 
@@ -34,6 +37,32 @@
       "
     >
       sidebar
+      <div
+        style="
+          position: absolute;
+          background-color: red;
+          color: white;
+          top: 0px;
+          right: 0px;
+        "
+      >
+        X
+      </div>
+    </div>
+
+    <!-- position absolute = placed on the page -->
+
+    <div
+      style="
+        position: absolute;
+        background-color: red;
+        color: white;
+        top: 60px;
+        right: 10px;
+        z-index: 2;
+      "
+    >
+      absolute
     </div>
 
     <div
@@ -46,8 +75,26 @@
     >
       div1
     </div>
-    <div style="background-color: lightpink; height: 200px; width: 200px">
+    <div
+      style="
+        background-color: lightpink;
+        height: 200px;
+        width: 200px;
+        position: relative;
+      "
+    >
       div2
+      <div
+        style="
+          position: absolute;
+          background-color: red;
+          color: white;
+          bottom: 5px;
+          right: 5px;
+        "
+      >
+        5:00
+      </div>
     </div>
   </body>
 </html>
