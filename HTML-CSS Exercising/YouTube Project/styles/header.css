@@ -33,7 +33,7 @@
 }
 
 .youtube-logo {
-  height: 24px;
+  height: 20px;
 }
 
 .hamburger-menu {
@@ -44,11 +44,56 @@
 .search-button {
   height: 40px;
   width: 66px;
-  background-color: rgb(230, 230, 230);
   border: 1px solid rgb(189, 188, 188);
   margin-left: -1px;
   margin-right: 10px;
+
+  position: relative;
 }
+.search-button:hover {
+  background-color: #efefef;
+}
+
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.upload-icon-container .tooltip,
+.youtube-apps-container .tooltip,
+.notification-container .tooltip {
+  font-family: Roboto, Arial;
+  background-color: #888888;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  position: absolute;
+  white-space: nowrap;
+}
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.youtube-apps-container:hover .tooltip,
+.notification-container:hover .tooltip {
+  opacity: 1;
+}
+.search-button,
+.voice-search-button,
+.upload-icon-container,
+.youtube-apps-container,
+.notification-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
 .voice-search-button {
   height: 40px;
   width: 40px;
@@ -68,14 +113,13 @@
 }
 .search-bar::placeholder {
   font-family: Roboto, Arial;
+  color: #888888;
   font-size: 16px;
 }
 .search-icon {
   height: 25px;
-  margin-top: 4px;
 }
 .voice-search-icon {
-  margin-top: 4px;
   height: 24px;
 }
 .upload-icon {
@@ -91,4 +135,24 @@
   margin-right: 25px;
   border-radius: 20px;
   height: 32px;
+  cursor: pointer;
+}
+.notification-container {
+  position: relative;
+}
+
+.number-of-notifications {
+  position: absolute;
+  top: -2px;
+  right: -5px;
+  z-index: 1;
+  background-color: rgb(206, 2, 2);
+  color: white;
+  font-family: Roboto, Arial;
+  font-size: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 10px;
 }

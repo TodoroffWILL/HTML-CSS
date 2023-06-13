@@ -12,7 +12,9 @@
     <title>YouTube Clone</title>
   </head>
   <body>
-    <div class="header">
+    <!-- semantics("header,section,nav") are more recognizable more from the SEO and robots reading ur page. ITS SAME LIKE DIV -->
+
+    <header class="header">
       <div class="left-section">
         <img
           class="hamburger-menu"
@@ -25,6 +27,7 @@
         <input class="search-bar" type="text" placeholder="Search" />
         <button class="search-button">
           <img class="search-icon" src="./icons/search.svg" alt="search-btn" />
+          <div class="tooltip">Search</div>
         </button>
         <button class="voice-search-button">
           <img
@@ -32,177 +35,381 @@
             src="./icons/voice-search-icon.svg"
             alt="voice-icon"
           />
+          <div class="tooltip">Search with your voice</div>
         </button>
       </div>
       <div class="right-section">
-        <img class="upload-icon" src="./icons/upload.svg" alt="" />
-        <img class="youtube-apps-icon" src="./icons/youtube-apps.svg" alt="" />
-        <img
-          class="youtube-notifications-icon"
-          src="./icons/notifications.svg"
-          alt=""
-        />
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="./icons/upload.svg" alt="" />
+          <div class="tooltip">Create</div>
+        </div>
+        <div class="youtube-apps-container">
+          <img
+            class="youtube-apps-icon"
+            src="./icons/youtube-apps.svg"
+            alt=""
+          />
+          <div class="tooltip">YouTube apps</div>
+        </div>
+        <div class="notification-container">
+          <img
+            class="youtube-notifications-icon"
+            src="./icons/notifications.svg"
+            alt=""
+          />
+          <div class="number-of-notifications">3</div>
+          <div class="tooltip">Notifications</div>
+        </div>
         <img class="current-user-picture" src="./img/my-channel.jpeg" alt="" />
       </div>
-    </div>
+    </header>
 
-    <div class="sidebar">asd</div>
+    <nav class="sidebar">
+      <div class="side-bar-icon-container">
+        <img src="./sidebar-icons/home.svg" alt="" />
+        <div>Home</div>
+      </div>
+      <div class="side-bar-icon-container">
+        <img src="./sidebar-icons/explore.svg" alt="" />
+        <div>Explore</div>
+      </div>
+      <div class="side-bar-icon-container">
+        <img src="./sidebar-icons/subscriptions.svg" alt="" />
+        <div>Subscriptions</div>
+      </div>
+      <div class="side-bar-icon-container">
+        <img src="./sidebar-icons/originals.svg" alt="" />
+        <div>Originals</div>
+      </div>
+      <div class="side-bar-icon-container">
+        <img src="./sidebar-icons/youtube-music.svg" alt="" />
+        <div>YouTube Music</div>
+      </div>
+      <div class="side-bar-icon-container">
+        <img src="./sidebar-icons/library.svg" alt="" />
+        <div>Library</div>
+      </div>
+    </nav>
 
-    <div class="video-grid">
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img
-            class="thumbnail"
-            src="./img/thumbnail-1.webp"
-            alt="Marques and Google CEO"
-          />
-          <div class="time">14:20</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img
-              class="profile-picture"
-              src="./img/channel-1.jpeg"
-              alt="channel picture"
-            />
+    <main>
+      <section class="video-grid">
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a
+              href="https://www.youtube.com/watch?v=n2RNcPRtAiY"
+              class="video-info"
+              target="_blank"
+            >
+              <img
+                class="thumbnail"
+                src="./img/thumbnail-1.webp"
+                alt="Marques and Google CEO"
+              />
+            </a>
+            <div class="time">14:20</div>
           </div>
-          <div class="video-info">
-            <p class="video-title">
-              Talking Tech and AI with Google CEO Sundar Pichai!
-            </p>
-            <p class="video-author">Marques Brownlee</p>
-            <p class="video-stats">3.4M views &#183; 6 months ago</p>
-          </div>
-        </div>
-      </div>
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img
-            class="thumbnail"
-            src="./img/thumbnail-2.webp"
-            alt="Marques and Google CEO"
-          />
-          <div class="time">8:22</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img
-              class="profile-picture"
-              src="./img/channel-2.jpeg"
-              alt="channel picture"
-            />
-          </div>
-          <div class="video-info">
-            <p class="video-title">Try Not To Laugh Challenge #9</p>
-            <p class="video-author">Markiplier</p>
-            <p class="video-stats">19M views &#183; 4 years ago</p>
-          </div>
-        </div>
-      </div>
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img
-            class="thumbnail"
-            src="./img/thumbnail-3.webp"
-            alt="Marques and Google CEO"
-          />
-          <div class="time">9:13</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img
-              class="profile-picture"
-              src="./img/channel-3.jpeg"
-              alt="channel picture"
-            />
-          </div>
-          <div class="video-info">
-            <p class="video-title">
-              Crazy Tik Toks Taken Moments Before DISASTER
-            </p>
-            <p class="video-author">SSSniperWolf</p>
-            <p class="video-stats">12M views &#183; 1 year ago</p>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://youtube.com/c/mkbhd" target="_blank">
+                <img
+                  class="profile-picture"
+                  src="./img/channel-1.jpeg"
+                  alt="channel picture"
+                />
+              </a>
+              <div class="channel-tooltip">
+                <img
+                  class="channel-tooltip-picture"
+                  src="./img/channel-1.jpeg"
+                  alt="channel picture"
+                />
+                <div>
+                  <div class="profile-tooltip-header">Marques Brownlee</div>
+                  <div class="profile-tooltip-subscribers">15M subscribers</div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a
+                class="video-link"
+                href="https://www.youtube.com/watch?v=n2RNcPRtAiY"
+                target="_blank"
+              >
+                <p class="video-title">
+                  Talking Tech and AI with Google CEO Sundar Pichai!
+                </p>
+              </a>
+              <p class="video-author">Marques Brownlee</p>
+              <p class="video-stats">3.4M views &#183; 6 months ago</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img
-            class="thumbnail"
-            src="./img/thumbnail-4.webp"
-            alt="Marques and Google CEO"
-          />
-          <div class="time">22:09</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img
-              class="profile-picture"
-              src="./img/channel-4.jpeg"
-              alt="channel picture"
-            />
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a
+              href="https://www.youtube.com/watch?v=mP0RAo9SKZk"
+              class="video-link"
+              target="_blank"
+            >
+              <img
+                class="thumbnail"
+                src="./img/thumbnail-2.webp"
+                alt="Marques and Google CEO"
+              />
+            </a>
+            <div class="time">8:22</div>
           </div>
-          <div class="video-info">
-            <p class="video-title">
-              The Simplest Math Problem No One Can Solve - Collatz Conjecture
-            </p>
-            <p class="video-author">Veritasium</p>
-            <p class="video-stats">18M views &#183; 4 months ago</p>
-          </div>
-        </div>
-      </div>
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img
-            class="thumbnail"
-            src="./img/thumbnail-5.webp"
-            alt="Marques and Google CEO"
-          />
-          <div class="time">11:17</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img
-              class="profile-picture"
-              src="./img/channel-5.jpeg"
-              alt="channel picture"
-            />
-          </div>
-          <div class="video-info">
-            <p class="video-title">
-              Kadane's Algorithm to Maximum Sum Subarray Problem
-            </p>
-            <p class="video-author">CS DOJO</p>
-            <p class="video-stats">519k views &#183; 5 years ago</p>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@markiplier" target="_blank">
+                <img
+                  class="profile-picture"
+                  src="./img/channel-2.jpeg"
+                  alt="channel picture"
+                />
+              </a>
+              <div class="channel-tooltip">
+                <img
+                  class="channel-tooltip-picture"
+                  src="./img/channel-2.jpeg"
+                  alt="channel picture"
+                />
+                <div>
+                  <div class="profile-tooltip-header">Markiplier</div>
+                  <div class="profile-tooltip-subscribers">35M subscribers</div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a
+                href="https://www.youtube.com/watch?v=mP0RAo9SKZk"
+                target="_blank"
+                class="video-link"
+              >
+                <p class="video-title">Try Not To Laugh Challenge #9</p>
+              </a>
+              <p class="video-author">Markiplier</p>
+              <p class="video-stats">19M views &#183; 4 years ago</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img
-            class="thumbnail"
-            src="./img/thumbnail-6.webp"
-            alt="Marques and Google CEO"
-          />
-          <div class="time">19:59</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img
-              class="profile-picture"
-              src="./img/channel-6.jpeg"
-              alt="channel picture"
-            />
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a
+              href="https://www.youtube.com/watch?v=FgjPQQeTh1w"
+              target="_blank"
+              class="video-link"
+            >
+              <img
+                class="thumbnail"
+                src="./img/thumbnail-3.webp"
+                alt="Marques and Google CEO"
+              />
+            </a>
+            <div class="time">9:13</div>
           </div>
-          <div class="video-info">
-            <p class="video-title">
-              Anything You Can Fit In The Circle I’ll Pay For
-            </p>
-            <p class="video-author">MrBeast</p>
-            <p class="video-stats">141M views &#183; 1 year ago</p>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@SSSniperWolf" target="_blank">
+                <img
+                  class="profile-picture"
+                  src="./img/channel-3.jpeg"
+                  alt="channel picture"
+                />
+              </a>
+              <div class="channel-tooltip">
+                <img
+                  class="channel-tooltip-picture"
+                  src="./img/channel-3.jpeg"
+                  alt="channel picture"
+                />
+                <div>
+                  <div class="profile-tooltip-header">SSSniperWolf</div>
+                  <div class="profile-tooltip-subscribers">
+                    33.6M subscribers
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a
+                href="https://www.youtube.com/watch?v=FgjPQQeTh1w"
+                class="video-link"
+                target="_blank"
+              >
+                <p class="video-title">
+                  Crazy Tik Toks Taken Moments Before DISASTER
+                </p>
+              </a>
+              <p class="video-author">SSSniperWolf</p>
+              <p class="video-stats">12M views &#183; 1 year ago</p>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a
+              href="https://www.youtube.com/watch?v=094y1Z2wpJg"
+              class="video-link"
+              target="_blank"
+            >
+              <img
+                class="thumbnail"
+                src="./img/thumbnail-4.webp"
+                alt="Marques and Google CEO"
+              />
+            </a>
+            <div class="time">22:09</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@Veritasium" target="_blank">
+                <img
+                  class="profile-picture"
+                  src="./img/channel-4.jpeg"
+                  alt="channel picture"
+                />
+              </a>
+              <div class="channel-tooltip">
+                <img
+                  class="channel-tooltip-picture"
+                  src="./img/channel-4.jpeg"
+                  alt="channel picture"
+                />
+                <div>
+                  <div class="profile-tooltip-header">Veritasium</div>
+                  <div class="profile-tooltip-subscribers">
+                    13.8M subscribers
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a
+                href="https://www.youtube.com/watch?v=094y1Z2wpJg"
+                class="video-link"
+                target="_blank"
+              >
+                <p class="video-title">
+                  The Simplest Math Problem No One Can Solve - Collatz
+                  Conjecture
+                </p>
+              </a>
+              <p class="video-author">Veritasium</p>
+              <p class="video-stats">18M views &#183; 4 months ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a
+              href="https://www.youtube.com/watch?v=86CQq3pKSUw"
+              class="video-link"
+              target="_blank"
+            >
+              <img
+                class="thumbnail"
+                src="./img/thumbnail-5.webp"
+                alt="Marques and Google CEO"
+              />
+            </a>
+            <div class="time">11:17</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a
+                href="https://www.youtube.com/channel/UCxX9wt5FWQUAAz4UrysqK9A"
+                target="_blank"
+              >
+                <img
+                  class="profile-picture"
+                  src="./img/channel-5.jpeg"
+                  alt="channel picture"
+                />
+              </a>
+              <div class="channel-tooltip">
+                <img
+                  class="channel-tooltip-picture"
+                  src="./img/channel-5.jpeg"
+                  alt="channel picture"
+                />
+                <div>
+                  <div class="profile-tooltip-header">CS Dojo</div>
+                  <div class="profile-tooltip-subscribers">
+                    1.9M subscribers
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a
+                href="https://www.youtube.com/watch?v=86CQq3pKSUw"
+                class="video-link"
+                target="_blank"
+              >
+                <p class="video-title">
+                  Kadane's Algorithm to Maximum Sum Subarray Problem
+                </p>
+              </a>
+              <p class="video-author">CS DOJO</p>
+              <p class="video-stats">519k views &#183; 5 years ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a
+              href="https://www.youtube.com/watch?v=yXWw0_UfSFg"
+              class="video-link"
+              target="_blank"
+            >
+              <img
+                class="thumbnail"
+                src="./img/thumbnail-6.webp"
+                alt="Marques and Google CEO"
+              />
+            </a>
+            <div class="time">19:59</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@MrBeast" target="_blank">
+                <img
+                  class="profile-picture"
+                  src="./img/channel-6.jpeg"
+                  alt="channel picture"
+                />
+              </a>
+              <div class="channel-tooltip">
+                <img
+                  class="channel-tooltip-picture"
+                  src="./img/channel-6.jpeg"
+                  alt="channel picture"
+                />
+                <div>
+                  <div class="profile-tooltip-header">MrBeast</div>
+                  <div class="profile-tooltip-subscribers">
+                    159M subscribers
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a
+                href="https://www.youtube.com/watch?v=yXWw0_UfSFg"
+                class="video-link"
+                target="_blank"
+              >
+                <p class="video-title">
+                  Anything You Can Fit In The Circle I’ll Pay For
+                </p>
+              </a>
+              <p class="video-author">MrBeast</p>
+              <p class="video-stats">141M views &#183; 1 year ago</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

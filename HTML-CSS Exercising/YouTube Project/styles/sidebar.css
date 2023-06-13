@@ -1,8 +1,52 @@
 .sidebar {
   position: fixed;
-  background-color: aqua;
+  top: 57px;
   left: 0;
   bottom: 0;
-  top: 55px;
+  background-color: white;
   width: 72px;
+  z-index: 200;
+  padding-top: 5px;
+}
+.side-bar-icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 72px;
+  cursor: pointer;
+}
+.side-bar-icon-container:hover {
+  background-color: #eeeeee;
+}
+.side-bar-icon-container img {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+  margin-bottom: 7px;
+}
+.side-bar-icon-container div {
+  font-family: Roboto, Arial;
+  font-size: 10px;
+}
+
+@media (min-width: 1200px) {
+  .side-bar-icon-container {
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding-left: 25px;
+  }
+  .side-bar-icon-container div {
+    padding-left: 15px;
+  }
+
+  .sidebar {
+    width: 150px;
+  }
+}
+@media (min-width: 1200.1px) {
+  body {
+    margin-left: 75px;
+  }
 }
